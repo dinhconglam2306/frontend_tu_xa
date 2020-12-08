@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#box{
+    width: 600px;
+    height: 250px;
+    margin: 50px auto;
+    font-family: 'Times New Roman', Times, serif;
+    background: url(../images/background-img.png) left top repeat white;
+    padding: 20px;
+}
+
+    #box .title{
+        width: 400px;
+        background-color: #337933;
+        text-align: center;
+        line-height: 10px;
+        margin: 20px auto;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+        #box .title span{
+            color: white;
+            font-size: 22px;
+        }
+    #box .content{
+        margin: 10px;
+        color: #4287bd;
+    }
+    #box .bottom{
+        width: 560px;
+        background-color: #ffef00;
+    }
+        #box .bottom > span{
+        color:#2684ff;
+        font-weight: bold;
+    }

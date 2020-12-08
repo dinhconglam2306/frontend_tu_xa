@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#box{
+    width: 1000px;
+    height: 600px;
+    min-height: 424px;
+    background: url(../images/fb-background-img.png) left top repeat-x white;
+    border: 1px solid steelblue;
+    margin: 0px auto;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+    #box .img{
+        background: url(../images/header.jpg) left top no-repeat;
+        height: 400px;
+        width: 800px;
+        margin: 0px auto;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+        #box .img .avatar{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            left: 50%;
+            margin-left: -75px;
+            top: 265px;
+            border-radius: 50%;
+            background: url(../images/avatar.jpg) left top no-repeat;
+            border: 3px solid white;
+            z-index: 2;
+        }
+        #box .img .avatar .fas{
+            color: black;
+        }
+        #box .img .avatar .camera-1{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            z-index: 3;
+            font-size: 25px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background-color:#e0dcdc;
+            top: 95px;
+            left: 115px;
+        }
+        #box .img .center{
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color:#e0dcdc ;
+            position: absolute;
+            left: 720px;
+            top: 350px;
+            border-radius:7px;
+            padding: 3px 4px;
+        }
+        #box .img .center .camera-2{
+            margin-right: 10px;
+        }
+        #box .img .center a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: inline-block;
+        }
+    #box .content{
+        width: 800px;
+        height: 20px;
+        margin: 20px auto;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #box .content span.h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #box .content span.h3-befor{
+        font-weight: bold;
+    }
+    #box .content span.stu{
+            color: rgb(188, 190, 190);
+            font-weight: bold;
+    }
+    #box .content a{
+        text-decoration: none;
+    }
+
+       

@@ -1,45 +1,64 @@
-       
-       #background{
-            width: 800px;
-            height: 600px;
-            margin: 50px auto;
-            background: url(../images/Layer-2.jpg);
-           position: relative;
-        }
-        #background .box{
+       *{
+           margin: 0px;
+           padding: 0px;
+       }
+       body{
+        background: url(../images/background.jpg) no-repeat center center fixed;
+
+        -webkit-background-size: cover;
+    
+        -moz-background-size: cover;
+    
+        -o-background-size: cover;
+    
+        background-size: cover;
+        position: relative;
+       }
+       /* =======================BOX=========================== */
+         .box{
             width: 400px;
             height: 300px;
-            position: absolute;
-            top:150px;
-            left: 200px;
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-left: -200px;
+            margin-top: -150px;
           
         }
-        #background .box .title{
+         /* =======================TITLE=========================== */
+         .box .title{
             height: 63px;
             line-height: 63px;
-            background:url(../images/heheeeee.png) 366px center no-repeat #6f4b72;
+            background-color:  #6f4b72;
             border-top-left-radius: 2px;
             border-top-right-radius:2px;
         }
 
-        #background .box .title h3{
+         .box .title h3{
             margin-left: 22px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             font-size: 14px;
             color: white;
         }
-        
-        #background .box .content{
+
+        .box .title h3 a .fas{
+            color: white;
+            position: absolute;
+            top: 27px;
+            right: 24px;
+        }
+         /* =======================FORM=========================== */
+         .box .content{
             height: 237px;
             background-color:#f2f2f2;
             border-bottom-left-radius: 2px;
             border-bottom-right-radius: 2px;
         }
-        #background .box .content .login-form{
+         .box .content .login-form{
             position: relative;
         }
-        #background .box .content .login-form input{
+         .box .content .login-form input{
             height: 50px;
             width: 327px;
             line-height: 50px;
@@ -49,25 +68,31 @@
             font-size: 12px;
             font-weight: bold;
             color: #999999;
-            background: url(../images/User2.png) 307px center no-repeat #f0eef0;
+            background-color:  #f0eef0;
             border: 1px solid #dfdfdf;
             border-radius: 2px;
             padding-left: 20px;
-            padding-left: 20px;
+            margin-bottom: -3px;
         }
-        #background .box .content .login-form input[value=Password]{
-        background: url(../images/Locked-2.png) 300px center no-repeat #f0eef0;
-        position: absolute;
-        top: 80px;
-        left: 0px;
+        .box .content .login-form i.fa-lock-alt{
+            position: absolute;
+            top: 110px;
+            right: 41px;
+            color: #b3b3b3;
         }
-
-        #background .box .content .login-form .button{
+        .box .content .login-form i.fa-user{
+            position: absolute;
+            top: 40px;
+            right: 41px;
+            color: #b3b3b3;
+        }
+   /* =======================BUTTON=========================== */
+         .box .content .login-form .button{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
             font-weight: bold;
         }
-        #background .box .content .login-form .button a{
+         .box .content .login-form .button a{
             width: 100px;
             height: 40px;
             border-radius: 2px;
@@ -82,7 +107,7 @@
             
         }
 
-        #background .box .content .login-form .button > span{   
+         .box .content .login-form .button > span{   
             color: #999999;
             position: absolute;
             left:150px;

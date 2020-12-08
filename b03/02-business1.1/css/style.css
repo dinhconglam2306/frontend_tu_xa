@@ -12,7 +12,7 @@
 }
 /* <===========================LIÊN HỆ==========================> */
 #box .header {
-    background: url(/images/f--t--e--g.png) left center no-repeat;
+    background: url(../images/f--t--e--g.png) left center no-repeat;
 }
 
 #box .header .lienhe{
@@ -22,13 +22,13 @@
     font-size: 16px;
     color: white;
     line-height: 48px;
-    background: url(/images/Layer-22.png) 223px center no-repeat #0175b3;
+    background: url(../images/Layer-22.png) 223px center no-repeat #0175b3;
    
 }
 
 #box .header .lienhe .lienhe-1{
     margin-left: 251px;
-    background: url(/images/icon-thu.png)94px center no-repeat;
+    background: url(../images/icon-thu.png)94px center no-repeat;
     position: relative;
 }
 #box .header .lienhe .lienhe-1 > span{
@@ -43,7 +43,7 @@
 /* <===========================MENU==========================> */
 #box .header .menu{
     height: 138px;
-    background: url(/images/logo.jpg) 230px center no-repeat;
+    background: url(../images/logo.jpg) 230px center no-repeat;
     line-height: 138px;
 }
 
@@ -71,12 +71,12 @@
     width: 207px;
     border: 1px solid #9f9f9f;
     color: #505050;
-    background: url(/images/search.png) 181px center no-repeat;
+    background: url(../images/search.png) 181px center no-repeat;
     outline: none;
 }
 /* <===========================BACKGROUND==========================> */
 #box .background{
-    background-image: url(/images/background.jpg);
+    background-image: url(../images/background.jpg);
     height: 990px;
     position: relative;
 }
@@ -155,15 +155,15 @@
     margin: 0px 332px 45px 332px;
 }
 #box .background-bottom .bottom{
-    background: url(/images/cham.jpg) left center no-repeat;
+    background: url(../images/cham.jpg) left center no-repeat;
     height: 100px;
     margin-left: 840px;
 }
 #box .background-bottom .bottom .bottom1{
-    background: url(/images/cham1.png) 20px center no-repeat;
+    background: url(../images/cham1.png) 20px center no-repeat;
     height: 100px;
 }
 #box .background-bottom .bottom .bottom1 .bottom2{
-    background: url(/images/cham1.png) 40px center no-repeat;
+    background: url(../images/cham1.png) 40px center no-repeat;
     height: 100px;
 }
