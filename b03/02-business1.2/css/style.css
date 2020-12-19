@@ -472,48 +472,48 @@ footer{
         padding-right: 110px;
         line-height: 30px;
     }
-    footer .content .left-center a{
-        text-decoration: none;
-        color:#d1d1d1;
-    }
+        footer .content .left-center a{
+            text-decoration: none;
+            color:#d1d1d1;
+        }
     footer .content .right-center{
         width: 170px;
         line-height: 30px;
     }
-    footer .content .right-center a{
-        text-decoration: none;
-        color:#d1d1d1;
-    }
+        footer .content .right-center a{
+            text-decoration: none;
+            color:#d1d1d1;
+        }
     footer .content .right{
         width: 360px;
         padding-left: 120px;
         position: relative;
     }
-    footer .content .right > a{
-        text-decoration: none;
-        color:#d1d1d1;
-    }
-    footer .content .right span.content{
-        margin-bottom: 20px;
-    }
-    footer .content .right input{
-        width: 221px;
-        height: 53px;
-        padding-left: 20px;
-        margin-bottom: 40px;
-    }
-    footer .content .right span.nl-bottom{
-        background-color: #1766b6;
-        padding: 18px;
-        position: absolute;
+        footer .content .right > a{
+            text-decoration: none;
+            color:#d1d1d1;
+        }
+        footer .content .right span.content{
+            margin-bottom: 20px;
+        }
+        footer .content .right input{
+            width: 221px;
+            height: 53px;
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+        footer .content .right span.nl-bottom{
+            background-color: #1766b6;
+            padding: 18px;
+            position: absolute;
 
-    }
+        }
 
-    footer .content .right .successive a{
-        background-color:#363a42;
-        color: #ffffff;
-        margin-right: 10px;
-    }
+        footer .content .right .successive a{
+            background-color:#363a42;
+            color: #ffffff;
+            margin-right: 10px;
+        }
 
 
     /* <=====================================================LINE=================================================> */
