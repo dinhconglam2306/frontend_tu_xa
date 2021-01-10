@@ -1,0 +1,9 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+button{
+    margin-bottom: 40px;
+    margin: 40px auto;
+    padding: 5px 10px;
+}
