@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.image-list {
+  display: flex;
+}
+.image-item {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}

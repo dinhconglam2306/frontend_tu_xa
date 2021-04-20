@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Project-TodoList</h1>
+    <div id="container" class="container">
+      <div class="container_right">
+        <input class="search" type="search" placeholder="Search for" />
+        <button class="search_go">Go!</button>
+      </div>
+
+      <div class="container_center">
+        <select id="sort_by">
+          <option value="name_asc">NAME - ASC</option>
+          <option value="name_desc">NAME - DESC</option>
+          <option value="level_asc">LEVEL - ASC</option>
+          <option value="level_desc">LEVEL - DESC</option>
+          <!-- <option value="sort_by" selected></option> -->
+        </select>
+        <button class="button_sort_by">HELLO</button>
+      </div>
+
+      <div class="container_left">
+        <button class="add_task" onclick="showAddTask();">Add Task</button>
+        <div class="container_left_bottom" id="container_left_bottom">
+          <div>
+            <input
+              class="task_name"
+              id="task_name"
+              type="text"
+              placeholder="Task Name"
+            />
+            <select id="level" value="Hight">
+              <option value="1" selected>Medium</option>
+              <option value="2">Hight</option>
+              <option value="3">Small</option>
+            </select>
+            <button
+              class="submit"
+              id="btn-createListTask"
+              onclick="createListTask();"
+            >
+              Submit</button
+            ><br />
+            <button class="cancel" id="cancel" onclick="Cancel();">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task">
+      <h3 class="title">List Task</h3>
+      <table id="list-task">
+        <tr class="tr-table">
+          <td>#</td>
+          <td>Task</td>
+          <td>Level</td>
+          <td>Action</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="js/showAddTask.js"></script>
+    <script src="js/createListTask.js"></script>
+  </body>
+</html>
