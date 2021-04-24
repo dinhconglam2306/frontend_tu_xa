@@ -1,0 +1,101 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 5rem;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #6048aa, #73359f);
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100rem;
+  background-color: #380c65;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.548);
+  &__title {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  &-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    padding: 0 2rem;
+    &-zoom {
+      width: calc(25% - 2rem);
+      display: flex;
+      align-items: center;
+      &__button {
+        padding: 0.8rem 3rem;
+        border: 0;
+        margin: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #380c65;
+        &:hover {
+          background-color: #6508c2;
+          color: white;
+        }
+        &:active {
+          transform: scale(0.98);
+        }
+        &-icon {
+          font-size: 2rem;
+        }
+      }
+    }
+    &-bg {
+      width: calc(50% - 2rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &-select {
+      width: calc(25% - 2rem);
+    }
+  }
+}

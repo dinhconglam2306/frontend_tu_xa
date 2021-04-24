@@ -1,0 +1,152 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.checkout {
+  @include size(70rem, 50rem);
+  background-image: url(./image/photo-1531685250784-7569952593d2.jfif);
+  object-fit: cover;
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-item {
+    @include size(30rem, 40rem);
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    &__main {
+      width: 100%;
+      height: 15rem;
+      background-color: #999;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        95% 95%,
+        90% 100%,
+        85% 95%,
+        80% 100%,
+        75% 95%,
+        70% 100%,
+        65% 95%,
+        60% 100%,
+        55% 95%,
+        50% 100%,
+        45% 95%,
+        40% 100%,
+        35% 95%,
+        30% 100%,
+        25% 95%,
+        20% 100%,
+        15% 95%,
+        10% 100%,
+        5% 95%,
+        0 100%
+      );
+    }
+    &__image {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+    &__content {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    &__content1 {
+      position: relative;
+    }
+    &__title {
+      font-weight: bold;
+      color: rgb(230, 115, 63);
+    }
+    &__money {
+      font-weight: bold;
+      font-size: 12px;
+      margin-top: 1rem;
+      span {
+        font-size: 16px;
+      }
+    }
+    &-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      &__content {
+        display: flex;
+        flex-direction: column;
+      }
+      &__label {
+        text-transform: uppercase;
+        color: #999;
+        margin-bottom: 0.5rem;
+      }
+      &__input {
+        height: 2rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+      &-icon {
+        position: absolute;
+        top: 18.5rem;
+        right: 3rem;
+        &__master {
+          font-size: 3rem;
+          color: orange;
+          cursor: pointer;
+        }
+      }
+    }
+    &__paynow {
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      background-color: blueviolet;
+      cursor: pointer;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}

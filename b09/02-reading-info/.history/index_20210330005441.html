@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="checkout">
+      <div class="checkout-item">
+        <div class="checkout-item__main">
+          <img
+            src="https://images.unsplash.com/photo-1614689540269-7f9315660d59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80"
+            alt=""
+            class="checkout-item__image"
+          />
+          <div class="checkout-item__content">
+            <h3 class="checkout-item__title">Nike Air Max</h3>
+            <p class="checkout-item__money">$<span>399</span>.00</p>
+          </div>
+        </div>
+        <div class="checkout-item-info">
+          <div class="checkout-item-info__content checkout-item-info__content1">
+            <label for="card-number" class="checkout-item-info__label"
+              >Card Number</label
+            >
+            <input
+              type="text"
+              class="checkout-item-info__input"
+              id="card-number"
+            />
+            <div class="checkout-item-info-icon">
+              <i
+                class="fab fa-cc-mastercard checkout-item-info-icon__master"
+              ></i>
+            </div>
+          </div>
+          <div class="checkout-item-info__content">
+            <label for="card-number" class="checkout-item-info__label"
+              >MM/YY</label
+            >
+            <input type="text" class="checkout-item-info__input" id="mm-yy" />
+          </div>
+          <div class="checkout-item-info__content">
+            <label for="card-number" class="checkout-item-info__label"
+              >CVC Code</label
+            >
+            <input
+              type="text"
+              class="checkout-item-info__input"
+              id="cvc-code"
+            />
+          </div>
+        </div>
+        <div class="checkout-item-pay">
+          <span class="checkout-item__paynow">pay now</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

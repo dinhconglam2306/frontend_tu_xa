@@ -1,0 +1,64 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 10rem;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #6048aa, #73359f);
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100rem;
+  background-color: #380c65;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 5px 3px black;
+  &__title {
+    color: white;
+    margin: 1rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  &-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
